@@ -1,6 +1,7 @@
 # Evil-adapter
 This awesome tool can put your wifi adater in monitor mode for packet injection and wifi cracking.
 Requirements:
+
 (1) The wifi adapter must support the monitor mode.
 
 (2) Your wifi adapter must have the chipset:- 
