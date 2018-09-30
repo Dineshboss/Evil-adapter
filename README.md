@@ -1,4 +1,4 @@
-# wifi-explioter
+# Wifi-Monitor
 This awesome tool can put your wifi adater in monitor mode for packet injection and wifi cracking.
 Requirements:
 (1) The wifi adapter must support the monitor mode.
@@ -10,4 +10,6 @@ Installation:
 git clone
 cd wifi-monitor
 python setup.py
+
+
 
