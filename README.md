@@ -5,7 +5,7 @@ Requirements:
 
 (2) Your wifi adapter must have the chipset:- 
 
-chipset= atheros AR9271(Alfa AWUS036NHA only support 2.4 ghz frequency)
+chipset= atheros AR9271(Alfa AWUS036NHA only support 2.4 ghz frequency) OR
 
 chipset= Realtek AR8812AU (Alfa AWUS036ACH support both 5 and 2.4 GHZ but less realiable)
 
