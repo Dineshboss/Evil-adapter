@@ -14,7 +14,7 @@ Installation:
 
 git clone
 
-cd wifi-monitor
+cd Evil-adapter
 
 python setup.py -i interface -m mode
 
