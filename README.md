@@ -13,7 +13,7 @@ chipset= Realtek AR8812AU (Alfa AWUS036ACH support both 5 and 2.4 GHZ but less r
 
 Installation:
 
-git clone
+git clone https://github.com/Dineshboss/Evil-adapter.git
 
 cd Evil-adapter
 
