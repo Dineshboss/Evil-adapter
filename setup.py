@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 
 import subprocess
-import optparse
+import argparse
 import re
 
 
 def get_arguments():
-    parser = optparse.OptionParser(description="Usage of MODE Changer author by Dinesh")
-    parser.add_option("-i", "--interface", dest="interface", help="Interface to change its MODE")
-    parser.add_option("-m", "--mode", dest="mode", help="New MODE")
-    (options, argument) = parser.parse_args()
+    parser = argparse.ArgumentParser(description="Usage of MODE Changer author by Dinesh")
+    parser.add_argument("-i", "--interface", dest="interface", help="Interface to change its MODE")
+    parser.add_argument("-m", "--mode", dest="mode", help="New MODE")
+    options= parser.parse_args()
     if not options.interface:
         parser.error("Please specify interface, use --help for more info")
         parser.parse_args()
@@ -29,7 +29,7 @@ def change_mode(interface, mode):
 
 def get_current_mac(interface):
     iwconfig_result = subprocess.check_output(["iwconfig", interface])
-    regex_final_result = re.search(r"\W\D\D\D\D:\D\D\D\D\D\D\D\s", iwconfig_result)
+    regex_final_result = re.search(r"\W\D\D\D\D:\D\D\D\D\D\D\D\s", iwconfig_result.decode('utf-8'))
     if regex_final_result:
         return regex_final_result.group(0)
     else:
